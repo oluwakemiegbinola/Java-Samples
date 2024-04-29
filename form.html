@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>JavaScript Events</h1>
+
+    <from method="get">
+        <label> Your Name: <input type="text" name="></label>
+        <input type="submit">
+    </from>
+    <script>
+        var myForm = document.querySelector('Form');
+
+        myForm.addEventListener('submit', function(evt){
+            evt.preventDefault();
+            var forData = document.querySelector('input').value;
+            alert('formData');
+        });
+    </script>
+    
+</body>
+</html>
